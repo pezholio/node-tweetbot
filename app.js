@@ -58,7 +58,7 @@ getFeed = function() {
   if (sinceId) {
     obj.since_id = sinceId + 1;
   }
-  return twitter.getHomeTimeline(obj, feedCallback);
+  return twitter.getMentions(obj, feedCallback);
 };
 
 showFeed = function() {
